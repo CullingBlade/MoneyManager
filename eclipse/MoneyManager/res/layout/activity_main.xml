@@ -1,0 +1,66 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <TextView
+        android:id="@+id/tvHello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:text="Welcome!"
+        android:textSize="18dp" />
+
+    <RelativeLayout
+        android:id="@+id/rlListUser1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHello"
+        android:layout_marginTop="10dp" >
+
+        <ImageButton
+            android:id="@+id/btnCreateUser1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_action_new"
+            android:text="Create User" />
+
+        <ListView
+            android:id="@+id/lvUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnCreateUser1"
+            android:layout_marginTop="5dp" >
+        </ListView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlListUser0"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/tvHello"
+        android:layout_marginTop="10dp" >
+
+        <TextView
+            android:id="@+id/tvUserTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="No User. Create User now!" />
+
+        <Button
+            android:id="@+id/btnCreateUser0"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvUserTitle"
+            android:layout_centerHorizontal="true"
+            android:text="Create User" />
+    </RelativeLayout>
+
+</RelativeLayout>
